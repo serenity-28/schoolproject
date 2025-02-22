@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News For The People</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+       .header {
+            font-family: "Times New Roman", serif;
+            background: linear-gradient(90deg, #002b80, #0055cc);
+            color: #ffff00;
+            text-align: center;
+            padding: 25px;
+            font-size: 40px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            border-bottom: 5px solid #ffcc00;
+}
+
+        }
+        .nav {
+            background-color: #003366;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .search-bar input {
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+        }
+        .search-bar button {
+            padding: 6px 10px;
+            margin-left: 5px;
+            font-size: 14px;
+            background-color: #ffff00;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .search-bar button:hover {
+            background-color: #ffd700;
+        }
+        .container {
+            width: 60%;
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-title {
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .byline {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .article-image {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .caption {
+            font-size: 12px;
+            color: grey;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .advertisement {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header"><h1>News For The People</h1></div>
+
+    <div class="nav">
+        <div class="nav-links">
+            <a href="#">News</a>
+            <a href="#">Opinion</a>
+            <a href="#">Sports</a>
+            <a href="#">Entertainment</a>
+            <a href="#">Business</a>
+            <a href="#">Technology</a>
+            <a href="#">Health</a>
+            <a href="#">Politics</a>
+            <a href="#">Nation</a>
+            <a href="#">Economy</a>
+	    <a href="#">Culture</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search articles..." id="searchInput">
+            <button onclick="searchNews()">Search</button>
+        </div>
+    </div>
+<br>
+<font face=" times new roman"><marquee>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a school project. Do not take seriously.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a school project. Do not take seriously.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a school project. Do not take seriously.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a school project. Do not take seriously.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a school project. Do not take seriously.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a school project. Do not take seriously.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a school project. Do not take seriously.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a school project. Do not take seriously.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a school project. Do not take seriously.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a school project. Do not take seriously.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a school project. Do not take seriously.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a school project. Do not take seriously.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a school project. Do not take seriously.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a school project. Do not take seriously.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a school project. Do not take seriously.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a school project. Do not take seriously.
+</marquee>
+
+<div class="advertisement">
+            <a href="https://www.samsung.com/" style="color: grey">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/18357687166865.5dafc0c5925a8.png" 
+                alt="Samsung Advertisement" style="width: 690px; height: 170px; object-fit: cover;">
+                <br>
+                <span style="font-size: 12px; color: grey;">advertisement</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="article-title">
+            A Life Cut Short: The Story of Manuel 'Jun' Reguero Jr.
+        </div>
+        <div class="byline">By Mia Dela Cruz | June 30, 2019</div>
+
+        <img src="https://eastasiaforum.org/wp-content/uploads/2018/02/RTX4YOOC-1024x682-c-default.webp?v=1702561121" 
+        alt="Protesters against unjust killings in Duterte’s war on drugs" class="article-image">
+
+        <div class="caption">
+            Protesters march against the Philippine government's war on drugs, demanding justice for victims.
+            Credit: <a href="https://eastasiaforum.org" style="color:grey">eastasiaforum.org</a>
+        </div>
+
+                <div class="content">
+            <p>
+                A 17-year-old found dead in Tondo, Manila, one month ago has been revealed as the son of Police Chief Reguero.
+            </p>
+            
+            <p>
+              Manuel Reguero Jr., known as Jun to family and friends, was one of the many victims of Duterte’s war on drugs. Family members Jay Reguero and Grace Reguero have come forward to tell his story and remind the public the dead are not just numbers but people who had their lives taken from them too soon.
+            </p>
+            
+            <p>
+              To those who knew him, Jun, from a young age was deeply intelligent and compassionate, he saw the world for what it was and wanted to change it. He was frustrated with the hypocrisy he saw all around him—in the government, the church, and even in his own family. He spoke out against the Philippine drug war, believing it punished those who didn’t deserve it. He saw addiction not as a crime but as a symptom of a broken system, one that failed the very people it claimed to protect. He believed in second chances, redemption, and rehabilitation
+            </p>
+            
+            <p>
+              Jun created social media accounts to document the injustices suffered by victims and their families, sharing their pain with the world. Through his activism, he sought to make a difference, to show his country the harsh realities of the drug war. At first, Jay and Grace thought this was what got him killed.
+            </p>
+            
+            <p>
+              But the truth was more complicated, more heartbreaking. While he fought for others, Jun was fighting battles of his own. At some point, the weight of everything became too much, he turned to drugs. When his father found out, he was kicked out of his home. With nowhere else to go, he turned to his closest relatives, hoping for a fresh start. But life isn’t always that simple. Sometimes, no matter how hard you try, you don’t get back up again.
+            </p>
+            
+            <p>
+              For Jay, learning this was devastating. He had idolized Jun and saw him as the strongest person he ever knew. To find out that Jun did drugs and was almost too much to bear. “It was hard to accept,” Jay admitted. “I thought he was invincible. I thought he had all the answers. But he was just a person, like the rest of us.”
+            </p>
+            
+            <p>
+              Grace echoed the sentiment. “People want to put him in a box,” she said. “They want to say he was either a hero or a criminal. But he was neither. He was just... Jun. He cared so much, and maybe that’s what broke him in the end.”
+            </p>
+            
+            <p>
+              His story is one of both hope and tragedy. A reminder that even those who want to change the world are not immune to its weight. That the people we lose to this war are not just statistics or headlines, but sons, daughters, and friends. That they lived, they struggled, they mattered.
+            </p>
+            
+            <p>
+              Jay and Grace continue to share his story, not just to seek justice for Jun, but to make sure people remember what’s at stake. That the fight isn’t just about policies and politics—it’s about human lives.
+            </p>
+     </div>
+    </div>
+
+ <div class="advertisement">
+            <a href="https://www.pepsi.com/" style="color: grey">
+                <img src="https://numskull.com/cdn/shop/collections/pepsi_1600x.jpg?v=1702561121" 
+                alt="Pepsi Advertisement" width="690" height="180">
+                <br>
+                <span style="font-size: 12px; color: grey;">advertisement</span>
+            </a>
+        </div>
+    </div>
+
+<center>
+<font face="Times new roman" size="3" color="grey">Based on the work of Randy Ribay, Patron Saints of Nothing</font>
+</center>
+
+    <div class="footer">
+        &copy; 2025 News For The People. All rights reserved.
+    </div>
+
+    <script>
+        function searchNews() {
+            let query = document.getElementById("searchInput").value.toLowerCase();
+            alert("Searching for: " + query);
+        }
+    </script>
+
+</body>
+</html>
